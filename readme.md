@@ -8,9 +8,12 @@ DigitalOcean, Linux, Java, Gradle
 
 ### Project Description:
 
-- [Setup and configure a server on DigitalOcean](#setup-and-configure-a-server-on-digitalocean)
-- [Create and configure a new Linux user on the Droplet (Security best practice)](#create-and-configure-a-new-linux-user-on-the-droplet-security-best-practice)
-- [Deploy and run a Java Gradle application on Droplet](#deploy-and-run-a-java-gradle-application-on-droplet)
+## Table of Contents
+
+- [Setup and configure a server on DigitalOcean](#setup-and-configure-a-server-on-DigitalOcean)
+- [Create and configure a new Linux user on the Droplet (Security best practice)](#create-and-configure-a-new-Linux-user-on-the-Droplet-Security-best-practice)
+- [Deploy and run a Java Gradle application on Droplet](#deploy-and-run-a-Java-Gradle-application-on-Droplet)
+
 
 ## Setup and configure a server on DigitalOcean
 
