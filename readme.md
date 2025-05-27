@@ -7,12 +7,13 @@ Create server and deploy application on DigitalOcean
 DigitalOcean, Linux, Java, Gradle
 
 ### Project Description:
-- Setup and configure a server on DigitalOcean
-- Create and configure a new Linux user on the Droplet
-(Security best practice)
-- Deploy and run a Java Gradle application on Droplet
+- [Setup and configure a server on DigitalOcean](Setup and configure a server on DigitalOcean)
+- [Create and configure a new Linux user on the Droplet
+(Security best practice)](Create and configure a new Linux user on the Droplet
+(Security best practice))
+- [Deploy and run a Java Gradle application on Droplet](Deploy and run a Java Gradle application on Droplet)
 
-# Setup and configure a server on DigitalOcean
+## Setup and configure a server on DigitalOcean
 
  1. Create an account on Digital Ocean
  2. After logging in, go to Droplets and create a new droplet with Linux distribution.
@@ -27,7 +28,7 @@ DigitalOcean, Linux, Java, Gradle
   6. For example, to install Java, type: **java** and you’ll receive versions for it.
   7. Install version 8 of Java, by copying the command displayed as result.
 
-# Deploy and run a Java Gradle application on Droplet
+## Deploy and run a Java Gradle application on Droplet
 
 Prerequisites: Java is installed and now we have to build a JAR file that will be installed on the droplet so we can run the app and access it from browser.
    1. Open another terminal on your local computer and go into example project: java-react-example.
@@ -43,7 +44,7 @@ Prerequisites: Java is installed and now we have to build a JAR file that will b
    11. Using netstat, you can see the connections that have active internet connection. In case it’s not installed, you can installed it like with java.
    12. Run: **netstat -lpnt** and you’ll see the port that’s used
 
-# Create and configure a new Linux user on the Droplet (Security best practice)
+## Create and configure a new Linux user on the Droplet (Security best practice)
 
 You shouldn’t give the service root user permissions, so a new user role it’s needed.
   1. On the terminal where you’re logged into the droplet with root user, type: **adduser USERNAME** and set a password.
