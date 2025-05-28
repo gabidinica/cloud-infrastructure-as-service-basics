@@ -19,12 +19,12 @@ DigitalOcean, Linux, Java, Gradle
 
  1. Create an account on Digital Ocean
  2. After logging in, go to Droplets and create a new droplet with Linux distribution.
-      2.1 You will have automatically created a root user and you can connect to droplet by SSH
-      2.2 The SSH key that you’ll use to connect to the droplet is the public key from your computer that you’ve added to Gitlab or Github
+     - 2.1 You will have automatically created a root user and you can connect to droplet by SSH
+     - 2.2 The SSH key that you’ll use to connect to the droplet is the public key from your computer that you’ve added to Gitlab or Github
   3. When you create a server it’s publicly available to anyone and needs to be restricted by configuring the Firewall so that I explicitly allow access on specific ports. ( SSH Port = 22 )
-      3.1 Click on the droplet name and then on Networking -> Create Firewall.
-      3.2 Add a name to the firewall and for Inbound rules: SSH, PORT 22 and remove from Sources everything and add your IP address. Then click on Create Firewall.
-      3.3 Click on Firewall name, click on Droplets tab and assign your droplet.
+     - 3.1 Click on the droplet name and then on Networking -> Create Firewall.
+     - 3.2 Add a name to the firewall and for Inbound rules: SSH, PORT 22 and remove from Sources everything and add your IP address. Then click on Create Firewall.
+     - 3.3 Click on Firewall name, click on Droplets tab and assign your droplet.
   4. To connect to the droplet from your computer copy the IP address and into your terminal type: **ssh root@IP_ADDRESS**
   5. Nothing is installed on droplet and initially type: **apt update**
   6. For example, to install Java, type: **java** and you’ll receive versions for it.
@@ -51,9 +51,9 @@ Prerequisites: Java is installed and now we have to build a JAR file that will b
 You shouldn’t give the service root user permissions, so a new user role it’s needed.
   1. On the terminal where you’re logged into the droplet with root user, type: **adduser USERNAME** and set a password.
   2. You need to allow the new user the permissions that a root user has which means you need to add it to ‘sudo’ group. Type: **usermod -aG sudo USERNAME**
- 3. Switch to the new user by: **su - USERNAME**
+  3. Switch to the new user by: **su - USERNAME**
 You’ll see your name and now you’re on home directory, Also $ is for Linux user and # is for root user.
- 4. To exit from this user, type: **exit**
+  4. To exit from this user, type: **exit**
  
 If you want to ssh into the droplet, you need to add the ssh keys that you’ve added for the root user to the new created user.
   1. **ssh root@droplet_IP**
